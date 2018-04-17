@@ -22,13 +22,11 @@ import java.awt.BorderLayout
 import java.awt.GridBagConstraints.HORIZONTAL
 import java.awt.GridBagLayout
 import java.awt.Insets
-import javax.inject.Inject
 import javax.swing.JDialog
 import javax.swing.JTextField
 import javax.swing.border.EmptyBorder
 
-class SwingDialog
-@Inject constructor(application: BsafApplication) : JDialog() {
+class SwingDialog(application: BsafApplication) : JDialog() {
 
     private lateinit var textField: JTextField
 

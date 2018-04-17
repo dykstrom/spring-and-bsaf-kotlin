@@ -21,11 +21,9 @@ import org.jdesktop.application.Action
 import org.jdesktop.application.FrameView
 import java.awt.BorderLayout
 import java.awt.Dimension
-import javax.inject.Inject
 import javax.swing.border.EmptyBorder
 
-class BsafFrameView
-@Inject constructor(private val application: BsafApplication, private val dialog: SwingDialog) : FrameView(application) {
+class BsafFrameView(private val application: BsafApplication, private val dialog: SwingDialog) : FrameView(application) {
 
     init {
         val actions = application.context.getActionMap(this)
